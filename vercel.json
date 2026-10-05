@@ -1,0 +1,4 @@
+{ "headers": [
+  { "source": "/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] },
+  { "source": "/drawings/(.*).dxf", "headers": [{ "key": "Content-Type", "value": "application/dxf" }, { "key": "Content-Disposition", "value": "attachment" }] }
+] }

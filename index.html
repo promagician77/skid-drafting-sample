@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex, nofollow">
+<title>RO Skid Drafting Sample - James</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='10' fill='%231E3A5F'/><path d='M14 46h36M14 46V18M20 40l8-8 6 6 12-14' stroke='%23fff' stroke-width='4' fill='none'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14202E;--sub:#5B6775;--line:#DCE2E8;--soft:#F4F6F8;--navy:#1E3A5F;--red:#C2410C;--green:#15803D;--mono:"IBM Plex Mono",ui-monospace,monospace;box-sizing:border-box;padding-top:env(safe-area-inset-top,0);padding-bottom:env(safe-area-inset-bottom,0)}
+*,*::before,*::after{box-sizing:inherit}html{background:#fff}
+body{margin:0;color:var(--ink);font:15px/1.55 "IBM Plex Sans",-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;cursor:pointer}:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
+[hidden]{display:none!important}
+header{position:sticky;top:env(safe-area-inset-top,0);background:#fff;border-bottom:1px solid var(--line);z-index:10}
+.hb{display:flex;justify-content:space-between;align-items:center;padding:14px 28px 0;gap:12px;flex-wrap:wrap}
+.hb b{font-size:17px}.hb span{font:13px var(--mono);color:var(--sub)}
+.tabs{display:flex;padding:0 28px;overflow-x:auto}
+.tabs button{background:none;border:0;border-bottom:2px solid transparent;padding:12px 16px;font-weight:500;font-size:14px;color:var(--sub);white-space:nowrap}
+.tabs button[aria-selected="true"]{color:var(--navy);border-bottom-color:var(--navy)}
+.panel{padding:20px 28px 48px}
+.bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.bar p{margin:0;color:var(--sub);font-size:14px;flex:1;min-width:260px}
+.btn{display:inline-block;text-decoration:none;border:1px solid var(--navy);color:var(--navy);border-radius:6px;padding:7px 12px;font-weight:600;font-size:13px;background:#fff}
+.btn.pri{background:var(--navy);color:#fff}
+.sheet{border:1px solid var(--line);border-radius:8px;overflow:auto;background:#fff;cursor:zoom-in}
+.sheet img{display:block;width:100%;height:auto}
+.sheet.z{cursor:zoom-out}.sheet.z img{width:250%;max-width:none}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.box{border:1px solid var(--line);border-radius:10px;padding:18px;min-width:0;background:#fff}
+.box h3{margin:0 0 8px;font-size:15px}.dim{color:var(--sub);font-size:13.5px;margin:0 0 10px}
+.pid svg{display:block;width:100%;height:auto}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th{text-align:left;color:var(--sub);font-weight:600;font-size:12px;padding:7px 8px;border-bottom:2px solid var(--line)}
+td{padding:8px;border-bottom:1px solid var(--line)}td.m{font-family:var(--mono);font-size:12.5px}
+.ok{color:var(--green);font-weight:600}
+.pill{display:inline-block;font:600 12px var(--mono);background:var(--soft);border:1px solid var(--line);border-radius:4px;padding:1px 7px}
+.list{display:grid;gap:8px}.list div{background:var(--soft);border-radius:8px;padding:10px 12px;font-size:13.5px}
+.list b{display:block}.list span{color:var(--sub)}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.flow div{background:var(--soft);border-radius:8px;padding:12px;font-size:13px;position:relative}
+.flow b{display:block;color:var(--navy);margin-bottom:2px}
+.flow small{color:var(--sub)}
+.price{font:600 22px var(--mono);color:var(--navy)}
+@media(max-width:900px){.g2,.g3,.flow{grid-template-columns:1fr}.panel{padding:16px}.tabs,.hb{padding-left:16px;padding-right:16px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="hb"><b>RO Skid Drafting Sample</b><span>For your Venice, FL drafting post - by James</span></div>
+  <nav class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-t="sheet">Sample sheet</button>
+    <button role="tab" aria-selected="false" data-t="pid">P&amp;ID to drawing</button>
+    <button role="tab" aria-selected="false" data-t="std">Drafting standards</button>
+    <button role="tab" aria-selected="false" data-t="work">How I'd work</button>
+  </nav>
+</header>
+
+<section id="sheet" class="panel">
+  <div class="bar">
+    <p>GA of a 10 GPM RO skid, ANSI D at 1:8. Every dimension runs from one datum. Rev B shows an as-built change clouded from a shop markup. Click the sheet to zoom.</p>
+    <a class="btn pri" href="/drawings/SMP-RO-100_RevB.dxf" download>Download DXF (opens in AutoCAD)</a>
+    <a class="btn" href="/drawings/SMP-RO-100_RevB.pdf" target="_blank" rel="noopener">Open PDF</a>
+  </div>
+  <div class="sheet" id="sheetbox"><img src="/drawings/SMP-RO-100_RevB.png" alt="RO skid general arrangement drawing, plan and front elevation with dimensions, BOM, nozzle schedule, revision table, and title block" width="4420" height="2860"></div>
+</section>
+
+<section id="pid" class="panel" hidden>
+  <div class="g2">
+    <div class="box pid">
+      <h3>Simplified P&amp;ID - SMP-PID-100 Rev B</h3>
+      <p class="dim">The source the engineer hands over. Every tag here has to land on the drawing and in the BOM.</p>
+      <svg viewBox="0 0 660 310" xmlns="http://www.w3.org/2000/svg" font-family="IBM Plex Mono, monospace" font-size="11">
+        <g stroke="#14202E" stroke-width="1.6" fill="none">
+          <path d="M20 150H90M130 150H190M250 150H300M300 90V210M300 90H340M300 210H340"/>
+          <path d="M520 90H540M520 210H540M540 90V270H563M587 270H630"/>
+          <path d="M430 75V45H630M430 195V160H580V45"/>
+          <rect x="90" y="120" width="40" height="60" rx="6"/>
+          <circle cx="220" cy="150" r="30"/><path d="M200 128L248 150L200 172"/>
+          <rect x="340" y="75" width="180" height="30" rx="15"/><rect x="340" y="195" width="180" height="30" rx="15"/>
+        </g>
+        <path d="M563 260l12 10-12 10zM587 260l-12 10 12 10z" fill="#14202E"/>
+        <g fill="#C2410C"><path d="M62 145l10 5-10 5z"/><path d="M612 40l10 5-10 5z"/><path d="M612 265l10 5-10 5z"/></g>
+        <g text-anchor="middle" fill="#14202E">
+          <text x="110" y="200">CF-101</text><text x="220" y="200">P-101</text>
+          <text x="430" y="125">PV-101</text><text x="430" y="245">PV-102</text>
+          <text x="575" y="252">V-103</text>
+        </g>
+        <g fill="#5B6775"><text x="20" y="138">N1 FEED</text><text x="560" y="28" text-anchor="start">N2 PERMEATE</text><text x="560" y="298" text-anchor="start">N3 CONCENTRATE</text></g>
+        <g fill="#fff" stroke="#1E3A5F" stroke-width="1.4"><circle cx="160" cy="108" r="19"/><circle cx="270" cy="108" r="19"/><circle cx="490" cy="20" r="19"/></g>
+        <path d="M160 127V150M270 127V150M490 39V45" stroke="#1E3A5F" stroke-width="1.2"/>
+        <g text-anchor="middle" fill="#1E3A5F" font-size="9"><text x="160" y="111">PI-101</text><text x="270" y="111">PI-102</text><text x="490" y="23">FIT-102</text></g>
+      </svg>
+    </div>
+    <div class="box">
+      <h3>Tag-by-tag check before issue</h3>
+      <p class="dim">I run this list on every sheet. Nothing gets issued with a tag missing from the drawing or the BOM.</p>
+      <table>
+        <thead><tr><th>P&amp;ID tag</th><th>On drawing</th><th>In BOM</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td class="m">CF-101</td><td>Plan + elev</td><td>Item 1</td><td class="ok">Matched</td></tr>
+          <tr><td class="m">P-101</td><td>Plan + elev</td><td>Item 2</td><td class="ok">Matched</td></tr>
+          <tr><td class="m">PV-101/102</td><td>Plan + elev</td><td>Item 3 (qty 2)</td><td class="ok">Matched</td></tr>
+          <tr><td class="m">CP-101</td><td>Plan + elev</td><td>Item 4</td><td class="ok">Matched</td></tr>
+          <tr><td class="m">N1 / N2 / N3</td><td>Plan</td><td>Nozzle schedule</td><td class="ok">Matched</td></tr>
+          <tr><td class="m">PI-101/102, FIT-102, V-103</td><td>Ref. P&amp;ID</td><td>Item 6</td><td class="ok">Matched</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="std" class="panel" hidden>
+  <div class="g3">
+    <div class="box"><h3>Dimensions right the first time</h3><div class="list">
+      <div><b>One datum per skid</b><span>Every location measured from the frame corner. No chain dims that stack error.</span></div>
+      <div><b>Centerline elevations</b><span>Every nozzle and pipe run gets a CL EL the welder can take off directly.</span></div>
+      <div><b>Vendor-certified checks</b><span>Pump bases and panel mounts verified against vendor drawings, not catalog sketches.</span></div>
+    </div></div>
+    <div class="box"><h3>Revision control</h3><div class="list">
+      <div><b>Cloud + delta on every change</b><span>The shop sees exactly what moved, not just that the rev letter changed.</span></div>
+      <div><b>Rev table and title block in sync</b><span>Title block attributes, file name, and rev table always match.</span></div>
+      <div><b>As-builts same day</b><span>Shop markups come back in, get clouded, and reissued.</span></div>
+    </div></div>
+    <div class="box"><h3>Layers in the DXF</h3>
+      <table><tbody>
+        <tr><td class="m">FRAME</td><td>Skid steel</td></tr><tr><td class="m">EQUIP</td><td>Vessels, pumps, panels</td></tr>
+        <tr><td class="m">PIPE</td><td>Piping, nozzles</td></tr><tr><td class="m">CENTER</td><td>Centerlines</td></tr>
+        <tr><td class="m">DIMS</td><td>Live dimension entities</td></tr><tr><td class="m">REV</td><td>Clouds and deltas</td></tr>
+        <tr><td class="m">TITLE / BORDER</td><td>Sheet, tables, title block</td></tr>
+      </tbody></table>
+      <p class="dim" style="margin-top:10px">I'll switch to your layer standard and title block on day one.</p>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="panel" hidden>
+  <div class="box" style="margin-bottom:16px">
+    <h3>From your engineer's direction to the shop floor</h3>
+    <div class="flow">
+      <div><b>1. Receive</b><small>Sketch, markup, or P&amp;ID plus engineer notes</small></div>
+      <div><b>2. Draft</b><small>Your title block, layers, and drawing numbers</small></div>
+      <div><b>3. Self-check</b><small>Tag check, datum check, BOM count</small></div>
+      <div><b>4. Issue</b><small>PDF for review, DWG for files</small></div>
+      <div><b>5. As-built</b><small>Shop feedback clouded and reissued</small></div>
+    </div>
+  </div>
+  <div class="g2">
+    <div class="box"><h3>Rate</h3><div class="price">$30 / hour</div>
+      <p class="dim">Most GA or fabrication sheets: 3-6 hours. Small revisions and as-builts: under an hour.</p></div>
+    <div class="box"><h3>Try me first</h3>
+      <p class="dim">Send one real markup from a current job. I'll return a shop-ready sheet within 24 hours, paid at the same rate. If it's not right, you've lost a few hours, not a project.</p></div>
+  </div>
+</section>
+
+<script>
+document.querySelector('.tabs').addEventListener('click',function(e){
+  var b=e.target.closest('[role=tab]');if(!b)return;
+  document.querySelectorAll('[role=tab]').forEach(function(t){t.setAttribute('aria-selected',String(t===b))});
+  document.querySelectorAll('.panel').forEach(function(p){p.hidden=p.id!==b.dataset.t});
+});
+document.getElementById('sheetbox').addEventListener('click',function(){this.classList.toggle('z')});
+</script>
+</body>
+</html>
